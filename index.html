@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>To do, or not to do?</h1>
+          <h2>Enter in your tasks below</h2>
+          <form id="to-do-form">
+            <div class="form-group">
+              <label for="to-do-entry">What's on your list?</label>
+              <input type="text" class="form-control" id="to-do-entry" required placeholder="I need to..." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="to-do-when-entry">Complete by: </label>
+              <input type="text" class="form-control" id="to-do-when-entry"  placeholder="Enter date/time" autocomplete="off">
+            </div><div class="form-group">
+              <label for="to-do-where-entry">Where?</label>
+              <input type="text" class="form-control" id="to-do-where-entry" placeholder="Enter location" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="to-do-notes-entry">Add notes: </label>
+              <input type="text" class="form-control" id="to-do-notes-entry" placeholder="Type here" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-info">Add to list</button>
+          </form>
+
+          <h3>Look at all the things you need to do:</h3>
+          <ul id="to-do-list">
+          </ul>
+
+          <div class="col-md-6">
+            <div id="show-task">
+              <h3></h3>
+            <p>Task: <span class="do-what"></span></p>
+            <p>When: <span class="do-when"></span></p>
+            <p>Where: <span class="do-where"></span></p>
+            <p>Notes: <span class="do-notes"></span></p>
+            <!-- <button class="btn" id="clearButton">I'm done!</button> -->
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
